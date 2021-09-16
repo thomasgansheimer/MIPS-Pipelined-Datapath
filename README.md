@@ -20,6 +20,7 @@ Using Verilog, create a data path capable of running the VBSME program with the 
 - Forwarding and Hazard Detection to detect/resolve dependencies and data hazards
 - ALU core with capability to process 53 MIPS instruction types
 - Instruction Memory to store VBSME program
+- Data Memory to store frame and window
 - Controller to decode MIPS instructions and regulate data path
 
 ## Phase 3
