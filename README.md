@@ -4,7 +4,7 @@ The overall goal of the project was to create a 5 stage pipelined data path in V
 
 ## Phase 1
 
-Create a [Variable Block Size Motion Estimation (VBSME) program](Phase1/vbsme.s) using MIPS that takes as input a frame of integers and a window of integers:
+Create a [Variable Block Size Motion Estimation (VBSME) program](<Phase 1/vbsme.s>) using MIPS that takes as input a frame of integers and a window of integers:
 ```
 frame = 0, 0, 0, 0,   window = 1, 2
         0, 0, 0, 0,            3, 4
@@ -15,13 +15,13 @@ The program then iterates through the frame in a spiral search pattern to find t
 
 ## Phase 2
 
-Using Verilog, create a [data path](<Phase2/Top Level/Datapath.v>) capable of running the VBSME program with the following characteristics: 
+Using Verilog, create a [data path](<Phase 2/Top Level/Datapath.v>) capable of running the VBSME program with the following characteristics: 
 - 5 stages with 4 pipeline registers
 - Forwarding and Hazard Detection to detect/resolve dependencies and data hazards
-- [ALU core](<Phase2/Data Path Components/ALU32Bit.v>) with capability to process [53 MIPS instruction types](Phase2/Mips_Instructions_Controller_Signals.xlsx)
-- [Instruction Memory](<Phase2/Data Path Components/InstructionMemory.v>) to store VBSME program
-- [Data Memory](<Phase2/Data Path Components/DataMemory.v>) to store frame and window
-- [Controller](<Phase2/Data Path Components/Controller.v>) to decode MIPS instructions and regulate data path
+- [ALU core](<Phase 2/Data Path Components/ALU32Bit.v>) with capability to process [53 MIPS instruction types](Phase 2/Mips_Instructions_Controller_Signals.xlsx)
+- [Instruction Memory](<Phase 2/Data Path Components/InstructionMemory.v>) to store VBSME program
+- [Data Memory](<Phase 2/Data Path Components/DataMemory.v>) to store frame and window
+- [Controller](<Phase 2/Data Path Components/Controller.v>) to decode MIPS instructions and regulate data path
 
 ## Phase 3
 
